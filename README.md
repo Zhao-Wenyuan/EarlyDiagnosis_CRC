@@ -1,19 +1,19 @@
-# meDCR
+# EarlyDiag_CRC
 Identification of CRC and normal samples based on methylation probe expression profile.
 # Install
-To install the meDCR, install from github using devtools
+To install the EarlyDiag_CRC, install from github using devtools
 ```
 library(devtools)
-install_github("Zhao-Wenyuan/meDCR")
+install_github("Zhao-Wenyuan/EarlyDiag_CRC")
 ```
 Or you can download the .ZIP file and and unzip it.
 ```
-install.packages("meDCR",repos = NULL,type="source")
-#The "meDCR" should be combined with the absolute path.
+install.packages("EarlyDiag_CRC",repos = NULL,type="source")
+#The "EarlyDiag_CRC" should be combined with the absolute path.
 ```
 # Usage
 ```
-library(meDCR)
+library(EarlyDiag_CRC )
 data(example)
 data(model)
 a1=CRC_test(Tumor,Normal))
@@ -22,13 +22,14 @@ biomakers()#The methylation probe markers used in the model and the correspondin
 ```
 The example is two DNA methylation probes("cg07146119","cg06848185") data values (β value) of CRC sample from TCGA M450K data.
 # Data input
-Tumor or Normal,A dataframe with methylation probes beta values where columns are samples and rows are probes IDs.This data set is used to test the known labels of the input of samples.Data sets need to be divided into two groups: Tumor and Normal.
-data1, A dataframe with methylation probes beta values  where columns are samples and rows are probes IDs.This data set is used to predict the input of unknown samples.It doesn't need the original label of the sample
+Tumor or Normal, a dataframe with methylation probes beta values where columns are samples and rows are probes IDs.This data set is used to test the known labels of the input of samples.Data sets need to be divided into two groups: Tumor and Normal.
+
+data1, a dataframe with methylation probes beta values  where columns are samples and rows are probes IDs.This data set is used to predict the input of unknown samples.It doesn't need the original label of the sample.
 
 # Citation
 Please use the following citation:
 ```
-https://github.com/Zhao-Wenyuan/meDCR
+https://github.com/Zhao-Wenyuan/EarlyDiagnosis_CRC
 ```
 
 # Contact email
