@@ -4,7 +4,7 @@ Identification of CRC and normal samples based on methylation probe expression p
 To install the EarlyDiagCRC, install from github using devtools
 ```
 library(devtools)
-install_github("Zhao-Wenyuan/EarlyDiagCRC")
+install_github("Zhao-Wenyuan/EarlyDiagnosis_CRC")
 ```
 Or you can download the .ZIP file and and unzip it.
 ```
