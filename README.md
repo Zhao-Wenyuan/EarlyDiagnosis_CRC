@@ -1,23 +1,23 @@
-# EarlyDiag_CRC
+# EarlyDiagCRC
 Identification of CRC and normal samples based on methylation probe expression profile.
 # Install
-To install the EarlyDiag_CRC, install from github using devtools
+To install the EarlyDiagCRC, install from github using devtools
 ```
 library(devtools)
-install_github("Zhao-Wenyuan/EarlyDiag_CRC")
+install_github("Zhao-Wenyuan/EarlyDiagCRC")
 ```
 Or you can download the .ZIP file and and unzip it.
 ```
-install.packages("EarlyDiag_CRC",repos = NULL,type="source")
-#The "EarlyDiag_CRC" should be combined with the absolute path.
+install.packages("EarlyDiagCRC",repos = NULL,type="source")
+#The "EarlyDiagCRC" should be combined with the absolute path.
 ```
 # Usage
 ```
-library(EarlyDiag_CRC )
+library(EarlyDiagCRC)
 data(example)
 data(model)
-a1=CRC_test(Tumor,Normal))
-a2=CRC_predict(data1)
+Pred=EarlyDiag(data1)
+Eval=EarlyDiag_AUC(Tumor,Normal))
 biomakers()#The methylation probe markers used in the model and the corresponding gene information were displayed. 
 ```
 The example is two DNA methylation probes("cg07146119","cg06848185") data values (β value) of CRC sample from TCGA M450K data.
